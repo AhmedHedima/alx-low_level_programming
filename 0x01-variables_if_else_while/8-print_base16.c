@@ -17,7 +17,7 @@ int main(void)
 		putchar(x);
 		if (x == 57)
 			x += 39;
-		c++;
+		x++;
 	}
 	putchar('\n');
 	return (0);
