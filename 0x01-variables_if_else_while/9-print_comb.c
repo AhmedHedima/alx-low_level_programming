@@ -3,21 +3,24 @@
 /**
 * main - Entry point
 *
-*Description: print all alphabet letter except q and e
+*Description: print 0, 1 ,-9
 *
-*Return : 0 (success)
+*Return: 0 (success)
 */
 
 int main(void)
 {
-	char c = 'a';
+	int x = 0;
 
-	while (c <= 'z')
+	while (x <= 9)
 	{
-		if (c == 'e' || c == 'q')
-			c++;
-		putchar(c);
-		c++;
+		putchar(x + 48);
+		if (x != 9)
+		{
+			putchar(".");
+			putchar(" ");
+		}
+		x++;
 	}
 	putchar('\n');
 	return (0);
