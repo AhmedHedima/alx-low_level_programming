@@ -15,19 +15,19 @@ int main(void)
 	while (x <= 9)
 	{
 		putchar(x + 48);
-		y = 0;
+		y = x;
 		while (y <= 9)
 		{
 			if (y != x)
 			{
-			putchar(y + 48);
-			z = 0;
+				putchar(y + 48);
+				z = y;
 			}
 			while (z <= 0)
 			{
 				if (y != z && x != z)
 				{
-				putchar(z + 48);
+					putchar(z + 48);
 				}
 				putchar(',');
 				putchar(' ');
