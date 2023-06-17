@@ -10,31 +10,36 @@
 
 int main(void)
 {
-	int x = 0, y, z;
+
+int x = 0, y, z;
 
 	while (x <= 9)
 	{
-
 		y = 0;
+
 		while (y <= 9)
 		{
 			z = 0;
-			while (z <= 0)
+
+
+			while (z <= 9)
 			{
-				if (y > x && y < z)
+				if (y > x && z > y)
 				{
 					putchar(x + 48);
 					putchar(y + 48);
 					putchar(z + 48);
+					putchar(',');
+					putchar(' ');
+
 				}
-				putchar(',');
-				putchar(' ');
-				z++;
+				 z++;
 			}
+
 		y++;
 		}
 	x++;
 	}
-
 	return (0);
+
 }
