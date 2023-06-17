@@ -3,7 +3,7 @@
 /**
 * main - Entry point
 *
-*Description : print all alphabet letter except q and e
+*Description: print all alphabet letter except q and e
 *
 *Return : 0 (success)
 */
