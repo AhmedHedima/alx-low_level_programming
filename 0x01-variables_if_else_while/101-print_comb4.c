@@ -14,20 +14,20 @@ int main(void)
 
 	while (x <= 9)
 	{
-		putchar(x);
+		putchar(x + 48);
 		y = 0;
 		while (y <= 9)
 		{
 			if (y != x)
 			{
-			putchar(y);
+			putchar(y + 48);
 			z = 0;
 			}
 			while (z <= 0)
 			{
 				if (y != z && x != z)
 				{
-				putchar(z);
+				putchar(z + 48);
 				}
 				z++;
 			}
