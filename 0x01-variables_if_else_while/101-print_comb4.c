@@ -14,19 +14,17 @@ int main(void)
 
 	while (x <= 9)
 	{
-		putchar(x + 48);
-		y = x;
+
+		y = 0;
 		while (y <= 9)
 		{
-			if (y != x)
-			{
-				putchar(y + 48);
-				z = y;
-			}
+			z = 0;
 			while (z <= 0)
 			{
-				if (y != z && x != z)
+				if (y > x && y < z)
 				{
+					putchar(x + 48);
+					putchar(y + 48);
 					putchar(z + 48);
 				}
 				putchar(',');
