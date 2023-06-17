@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main -Entry point
+ * main - Entry point
  *
  * Description: prints all possible different combinations of three digits
  *
@@ -14,20 +14,20 @@ int main(void)
 
 	while (x <= 9)
 	{
-		putchar('x');
+		putchar(x);
 		y = 0;
 		while (y <= 9)
 		{
 			if (y != x)
 			{
-			putchar('y');
+			putchar(y);
 			z = 0;
 			}
 			while (z <= 0)
 			{
 				if (y != z && x != z)
 				{
-				putchar('z');
+				putchar(z);
 				}
 				z++;
 			}
