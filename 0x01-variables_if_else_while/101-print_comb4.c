@@ -29,13 +29,14 @@ int main(void)
 				{
 				putchar(z + 48);
 				}
+				putchar(',');
+				putchar(' ');
 				z++;
 			}
 		y++;
 		}
 	x++;
 	}
-	putchar(',');
-	putchar(' ');
+
 	return (0);
 }
