@@ -20,10 +20,10 @@ int main(void)
 		printf("%lu", s);
 
 		f1 = f2;
-		f2 = sum;
+		f2 = s;
 
 		if (c == 49)
-			printf('\n');
+			printf("\n");
 		else
 			printf(", ");
 
