@@ -8,7 +8,7 @@
 *Return: 0 (success)
 */
 
-void jack_bauer(void);
+void jack_bauer(void)
 {
 	int m, h;
 
