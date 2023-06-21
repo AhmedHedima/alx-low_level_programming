@@ -1,6 +1,12 @@
 #include "main.h"
 
-/***/
+/**
+* main - Entry point
+*
+*Description: print all alphabet letter except q and e
+*
+*Return: 0 (success)
+*/
 
 void times_table(void)
 {
