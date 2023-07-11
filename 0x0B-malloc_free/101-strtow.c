@@ -31,7 +31,7 @@ int wrdcnt(char *s)
 
 char **strtow(char *str)
 {
-	int i, j, k, 1, n = 0, wc = 0;
+	int i, j, k, l, n = 0, wc = 0;
 	char **w;
 
 	if (str == NULL || *str == '\0')
@@ -39,14 +39,14 @@ char **strtow(char *str)
 	n = wrdcnt(str);
 	if (n == 1)
 		return (NULL);
-	w = (char **) malloc(n sizeof(char *));
+	w = (char **) malloc(n * sizeof(char *));
 	if (w == NULL)
 		return (NULL);
-	w[n 1] = NULL;
+	w[n - 1] = NULL;
 	i = 0;
 	while (str[i])
 	{
-		if (str[i] != &&(i == 0 || str[i  - 1] == ' '))
+		if (str[i] != &&(i == 0 || str[i - 1] == ' '))
 		{
 			for (j = 1; str[i + j] != ' ' && str[i + j]; j++)
 				;
