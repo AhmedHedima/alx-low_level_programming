@@ -7,7 +7,7 @@
 */
 int _strlen(char *s)
 {
-	int s = 0;
+	int size = 0;
 
 	for (; s[size] != '\0'; size++)
 	;
@@ -21,7 +21,7 @@ int _strlen(char *s)
  * Return: 0
 */
 
-int char *str_concat(char *s1, char *s2)
+char *str_concat(char *s1, char *s2)
 {
 	int si1, si2, i;
 	char *m;
@@ -41,7 +41,7 @@ int char *str_concat(char *s1, char *s2)
 		if (i < si1)
 			m[i] = s1[i];
 		else
-			m[i] = s2[i - si1]
+			m[i] = s2[i - si1];
 
 	}
 	m[i] = '\0';
