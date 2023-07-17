@@ -10,7 +10,7 @@
  * Description: just a lone dog struct in a big kitty world
 */
 
-Struct dog
+struct dog
 {
 	char *name;
 	float age;
