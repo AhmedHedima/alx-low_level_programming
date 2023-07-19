@@ -7,7 +7,7 @@
  * @argc: the number of args
  * @argv: argument vector
  *
- * Return: Always 0.
+ * Return: Always 0
 */
 
 int main(int argc, char **argv)
